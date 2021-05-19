@@ -14,7 +14,7 @@
         <?php include_once $this->pageFile?>
     </main>
     <footer>
-        oct-130521&copy;
+        <a href="https://github.com/VovchenkoMykyta/notesProject.git">VovchenkoMykyta&copy;</a>
     </footer>
 </body>
 </html>
