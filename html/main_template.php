@@ -9,7 +9,12 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Notes</header>
+    <header>
+        <p>Notes</p>
+        <div>
+            <a href="/admin.php"><button>Admin</button></a>
+        </div>
+    </header>
     <main>
         <?php include_once $this->pageFile?>
     </main>

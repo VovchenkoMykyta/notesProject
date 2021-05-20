@@ -4,10 +4,23 @@
     background-color: rgb(215, 217, 89);
 }
 header{
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     min-height: 10vh;
-    font-size: 70px;
     font-family: "Comic Sans MS";
+}
+header p{
+    margin-left: 560px;
+    font-size: 70px;
+}
+header div{
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 350px;
+}
+header div button:hover{
+    cursor: pointer;
 }
 main{
     min-height: 81vh;
