@@ -12,10 +12,7 @@ class AdminMain
             exit();
         } elseif ($_SERVER['REQUEST_METHOD'] === 'GET'){
             $deleteId = filter_input(INPUT_GET, 'delete');
-            if($deleteId === '0'){
-                $deleteId = 0;
-                $storage->deleteNote($deleteId);
-            }else{
+            if($deleteId !== null){
                 $id = intval($deleteId);
                 $storage->deleteNote($id);
             }

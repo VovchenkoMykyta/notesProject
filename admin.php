@@ -36,9 +36,9 @@ AdminMain::init();
         <?php
         $notes = $adminStorage->getAllNotes();
         if(!is_null($notes)){
-            echo "<table>";
+            echo "<table><tr><td>№</td><td>Note</td><td>Options</td></tr>";
             foreach ($notes as $i=> $note){
-                echo "<tr><td>id: $i</td><td>".$note."</td><td><a href='?delete=$i'>delete</a></td></tr>";
+                echo "<tr><td>$i</td><td>".$note."</td><td><a href='?delete=$i'>delete</a></td></tr>";
             }
             echo "</table>";
         }
